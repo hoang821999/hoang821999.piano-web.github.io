@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Piano</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Type And Enjoy</h2>
+    <audio id="myAudio" controls>
+        <source src="" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="btn-list">    
+        <button class="btn-c" onclick="playMusic('Do.mp3')">C
+        </button>
+        <button class="btn-h" onclick="playMusic('Re.mp3')">H
+        </button>
+        <button class="btn-a" onclick="playMusic('Mi.mp3')">A
+        </button>
+        <button class="btn-n" onclick="playMusic('Fa.mp3')">N
+        </button>
+        <button class="btn-g" onclick="playMusic('Sol.mp3')">G
+        </button>
+        <button class="btn-13" onclick="playMusic('La.mp3')">13
+        </button>
+        <button class="btn-1" onclick="playMusic('Si.mp3')">1
+        </button>
+    </div>  
+    <script>
+        var audio = document.getElementById("myAudio");
+        
+        function playMusic(song) {
+          // Tắt bài hát đang chạy nếu có
+          audio.pause();
+          audio.currentTime = 0;
+          
+          // Chọn bài hát mới và chạy
+          audio.src = song;
+          audio.play();
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(100deg, #e74d89, #febaa6);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /*khi muốn căn giữa mà phần tử không bị đẩy lên 1 dòng thì dùng cái này*/
+}
+#myAudio {
+    display: none;
+}
+ h2 {
+    color: #fff;
+    font-size: 30px; 
+    padding-bottom: 50px;
+}
+.btn-list {
+}
+
+.btn-c,
+.btn-h,
+.btn-a,
+.btn-n,
+.btn-g,
+.btn-13,
+.btn-1 {
+    width: 90px;
+    height: 75px;
+    background-color:#e43075;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0px 15px;
+}
